@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ListItem from '../../components/ListItem/ListItem';
 import uuid from 'uuid';
+import classes from './List.css';
 
 class List extends Component {
     state = {
@@ -32,9 +33,11 @@ class List extends Component {
                 onChange={e=>this.itemChangeHandler(e, index)}/>
         ));
         return (
-            <div>
-                {this.props.title}
-                <ol>
+            <div className={classes.List} >
+                <div className={classes.Title} >
+                    {this.props.title}
+                </div>
+                <ol className={classes.ListItems} >
                     {mappedItems}
                 </ol>
             </div>);

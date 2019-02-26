@@ -1,0 +1,17 @@
+.List {
+    display: flex;
+    flex-direction: column;
+}
+
+.Title {
+    display: flex;
+    background-color: lightgray;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+}
+
+.ListItems {
+    display: flex;
+    flex-direction: column;
+}
